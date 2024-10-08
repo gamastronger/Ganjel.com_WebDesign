@@ -13,7 +13,7 @@ const packages = [
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
     ],
-    link: "https://wa.me/6283112080715",
+    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
   },
   {
     title: "Paket CERMAT",
@@ -27,7 +27,7 @@ const packages = [
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
     ],
-    link: "https://wa.me/6283112080715",
+    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
   },
   {
     title: "Paket KILAT",
@@ -41,9 +41,8 @@ const packages = [
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
     ],
-    link: "https://wa.me/6283112080715",
+    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
   },
-  
 ];
 
 const Tampilan = () => {
@@ -83,6 +82,8 @@ const Tampilan = () => {
                 </p>
                 <a
                   href={pkg.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
                 >
                   AMBIL PROMO

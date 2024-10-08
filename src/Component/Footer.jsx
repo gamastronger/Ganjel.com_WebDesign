@@ -83,7 +83,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-2">
               <Link to="/Pemesanan">
-                <button className="bg-[#17A9E8] hover:bg-[#e2e2b6] text-black font-bold py-2 px-10 rounded-full transition duration-300">
+                <button className="bg-[#6eacda] hover:bg-[#e2e2b6] text-black font-bold py-2 px-10 rounded-full transition duration-300">
                   Mulai
                 </button>
               </Link>
@@ -135,9 +135,15 @@ const Footer = () => {
             ))}
           </ul>
 
-          <button className="bg-[#17A9E8] hover:bg-[#e2e2b6] text-black font-bold py-2 px-6 rounded-full transition duration-300">
+          <a 
+            href="https://wa.me/6283112080715"
+            className="bg-[#6eacda] hover:bg-[#e2e2b6] text-black font-bold py-2 px-6 rounded-full transition duration-300"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             Konsultasi Gratis
-          </button>
+          </a>
+
         </div>
       </div>
     </footer>

@@ -13,8 +13,12 @@ import kreatif from "../../assets/ikreatif.png";
 import totalitas from "../../assets/itotality.png";
 import ontime from "../../assets/iontime.png";
 import fastrespon from "../../assets/iresponse.png";
+import klien6 from "../../assets/klien/klien6.jpeg";
+import klien2 from "../../assets/klien/klien2.jpeg";
+import klien3 from "../../assets/klien/klien3.jpeg";
+import klien4 from "../../assets/klien/klien4.jpeg";
+import klien5 from "../../assets/klien/klien5.jpeg";
 
-import john from "../../assets/klien/john.jpeg"; // Replace with the correct path
 
 const Deskripsi = () => {
   const testimonialRef = useRef(null);
@@ -42,14 +46,14 @@ const Deskripsi = () => {
           {/* Text Section */}
           <div className="lg:pl-14">
             <h1 className="font-helvetica font-bold text-5xl lg:text-6xl leading-tight mb-4 lg:mb-5 text-[#0D255E]">
-              Jasa Desain Grafis & Manipulasi Foto
+              Jasa Desain Grafis & Pengolahan Visual
             </h1>
             <p className="font-sans text-lg lg:text-xl mb-5 lg:mb-8 text-justify">
               Jasa Desain Grafis berpengalaman yang menangani klien dari berbagai daerah. Kami melayani secara online dan tatap muka langsung.
             </p>
-            <button className="font-sans bg-[#151F38] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 hover:bg-[#18334F] hover:text-[#0089C4] transition">
+            <a href="/portofolio" className="font-sans bg-[#151F38] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 hover:bg-[#18334F] hover:text-[#0089C4] transition">
               Selengkapnya
-            </button>
+            </a>
           </div>
 
           {/* Image Section */}
@@ -116,39 +120,39 @@ const Deskripsi = () => {
       >
         {[
           { 
-            name: "John Doe", 
+            name: "Gumi", 
             company: "Universitas Negeri Surabaya", 
             role: "Mahasiswa", 
             feedback: "Layanan desain grafis berkualitas.",
-            image: john // Add John's profile image
+            image: klien6 // Add John's profile image
           },
           { 
-            name: "Jane Smith", 
-            company: "Smith Ventures", 
-            role: "Founder", 
+            name: "Itis", 
+            company: "Universitas Negeri Surabaya", 
+            role: "Mahasiswa", 
             feedback: "Pelayanan ramah, responsif, revisi cepat.",
-            image: john // Add Jane's profile image
+            image: klien2 // Add Jane's profile image
           },
           { 
-            name: "Emily White", 
-            company: "White Enterprises", 
-            role: "CMO", 
+            name: "Plufy", 
+            company: "Universitas Negeri Surabaya", 
+            role: "Mahasiswa", 
             feedback: "Portofolio mengesankan, keahlian beragam proyek.",
-            image: john // Add Emily's profile image
+            image: klien3 // Add Emily's profile image
           },
           { 
-            name: "Michael Green", 
-            company: "Green Technologies", 
-            role: "CTO", 
+            name: "Qyuu", 
+            company: "Universitas Negeri Surabaya", 
+            role: "Mahasiswa", 
             feedback: "Kualitas visual unggul, bisnis menonjol.",
-            image: john // Add Michael's profile image
+            image: klien4 // Add Michael's profile image
           },
           { 
-            name: "Sara Blue", 
-            company: "Blue Marketing Co.", 
-            role: "CEO", 
+            name: "Alex", 
+            company: "Universitas Negeri Surabaya", 
+            role: "Mahasiswa", 
             feedback: "Efisien, tepat waktu, sesuai brief.",
-            image: john // Add Sara's profile image
+            image: klien5 // Add Sara's profile image
           }
         ].map((client, index) => (
           <div key={index} className="min-w-[280px] sm:min-w-[320px] md:min-w-[380px] lg:min-w-[400px] flex-shrink-0 inline-block">

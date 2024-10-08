@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import logo1 from "../../assets/imglogo/postlog1.png";
 import logo2 from "../../assets/imglogo/postlog2.png";
 import logo3 from "../../assets/imglogo/postlog3.png";
@@ -20,6 +20,14 @@ const Logo = () => {
 
   const scrollRef = useRef(null);
   const [hoveredId, setHoveredId] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Memicu animasi masuk dengan delay seperti di Welcome
+  useEffect(() => {
+    setTimeout(() => {
+      setIsVisible(true);
+    }, 500); // Delay untuk memulai animasi
+  }, []);
 
   const scrollLeft = () => {
     scrollRef.current.scrollBy({
@@ -37,12 +45,16 @@ const Logo = () => {
 
   return (
     <div className="pt-16">
-      <h2 className="text-center text-4xl sm:text-5xl font-sans font-bold text-white mb-4 md:mb-8">
+      <h2
+        className={`text-center text-4xl sm:text-5xl font-sans font-bold text-white mb-4 md:mb-8 transition-opacity duration-1000 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
+        }`}
+      >
         Desain Logo
       </h2>
 
       <div className="relative">
-        {/* Navigation Arrows */}
+        {/* Tombol navigasi */}
         <button
           onClick={scrollLeft}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#03346e] text-white p-2 rounded-full hover:bg-[#021526] transition-all"
@@ -57,29 +69,32 @@ const Logo = () => {
           &#10095;
         </button>
 
-        {/* Scrollable container for portfolio items */}
+        {/* Container scrollable */}
         <div
           ref={scrollRef}
           className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide space-x-6 p-4"
-          style={{ scrollbarWidth: "none" }} // Hide scrollbar for Firefox
+          style={{ scrollbarWidth: "none" }} // Menyembunyikan scrollbar untuk Firefox
         >
-          {portfolioItems.map((item) => (
+          {portfolioItems.map((item, index) => (
             <div
               key={item.id}
-              className={`snap-center flex-none w-64 md:w-80 h-96 transition-transform duration-300 transform 
-              ${
-                hoveredId === item.id ? "scale-125 z-10" : "scale-95"
-              } overflow-hidden relative`}
+              className={`snap-center flex-none w-64 md:w-80 h-96 transition-all duration-1000 ease-out transform ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+              } delay-${index * 200} overflow-hidden relative cursor-pointer ${
+                hoveredId === item.id ? "scale-125 z-10" : "scale-100"
+              }`}
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
               <img
                 src={item.image}
                 alt=""
-                className={`w-full h-3/4 object-cover transition-opacity duration-300 ${
+                className={`w-full h-3/4 object-cover transition-opacity duration-500 ease-in-out transform ${
                   hoveredId && hoveredId !== item.id
-                    ? "opacity-50"
-                    : "opacity-100"
+                    ? "opacity-50 scale-95"
+                    : "opacity-100 scale-100"
                 }`}
               />
             </div>

@@ -34,7 +34,7 @@ const Navbar = () => {
     <div className="">
       <div
         className={`py-4 px-8 flex items-center justify-between text-[#e2e2b6] shadow-lg transition-transform duration-300 fixed top-0 w-full z-50 ${
-          isHidden ? "-translate-y-full" : "translate-y-0"
+          isHidden ? "-translate-y-auto" : "translate-y-auto"
         }`}
       >
         {/* Logo Section */}
@@ -93,7 +93,7 @@ const Navbar = () => {
             onClick={handleSidebar}
           >
             <div
-              className="absolute top-0 right-0 w-64 h-full bg-[#03346e] shadow-lg p-6 rounded-l-lg transform transition-transform duration-300 ease-in-out"
+              className="absolute top-0 right-0 w-90 h-full bg-[#0F172A] shadow-lg p-6 rounded-l-lg transform transition-transform duration-300 ease-in-out"
               style={{
                 transform: sidebarVisible
                   ? "translateX(0)"
@@ -103,7 +103,7 @@ const Navbar = () => {
               {/* Close Button */}
               <button className="flex justify-end mb-4" onClick={handleSidebar}>
                 <svg
-                  className="w-8 h-8 text-black"
+                  className="w-8 h-8 text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -119,7 +119,7 @@ const Navbar = () => {
               </button>
 
               {/* Mobile Links */}
-              <ul className="flex flex-col text-[#e2e2b6] gap-6">
+              <ul className="flex flex-col text-[#17A9E8] gap-6">
                 <li>
                   <a
                     href="/"
