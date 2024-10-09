@@ -7,10 +7,10 @@ const Welcome = () => {
 
   // Create random dots
   useEffect(() => {
-    const dotCount = 60; // Number of dots
+    const dotCount = 35; // Number of dots
     const dotElements = [];
     for (let i = 0; i < dotCount; i++) {
-      const delay = Math.random() * 5; // Random delay for each dot
+      const delay = Math.random() * 8; // Random delay for each dot
       const left = Math.random() * 100; // Random position across the width
       const size = Math.random() * 4 + 2; // Random size of the dots
       dotElements.push({ delay, left, size });
