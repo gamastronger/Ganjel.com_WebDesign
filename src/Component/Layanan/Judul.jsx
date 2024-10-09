@@ -1,5 +1,5 @@
-import bg from "../../Assets/bglayanan.png";
-import pict from "../../Assets/layanan.png";
+import bg from "../../assets/bglayanan.png";
+import pict from "../../assets/layanan.png";
 
 const Judul = () => {
   return (
