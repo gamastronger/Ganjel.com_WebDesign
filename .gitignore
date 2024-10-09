@@ -1,0 +1,56 @@
+# node_modules folder
+node_modules/
+
+Grafistix/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+
+# Built files
+build/
+dist/
+
+# Temp files
+*.tmp
+*.temp
+
+# Local environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+
+# Coverage directory used by testing tools
+coverage/
+
+# ESLint cache
+.eslintcache
+
+# Parcel-bundler cache (https://parceljs.org/)
+.cache/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Storybook files
+out/
+
+# Ignore all .lock files (yarn, npm, pnpm)
+*.lock
+
+
+.vercel
