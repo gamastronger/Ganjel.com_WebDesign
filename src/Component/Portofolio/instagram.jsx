@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useRef, useState } from "react";
 import iig1 from "../../assets/imgig/iig1.png";
 import iig2 from "../../assets/imgig/iig2.png";
 import iig3 from "../../assets/imgig/iig3.png";
