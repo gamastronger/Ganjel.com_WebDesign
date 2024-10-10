@@ -78,7 +78,7 @@ const Logo = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={item.id}
-              className={`snap-center flex-none w-64 md:w-80 h-96 transition-all duration-1000 ease-out transform ${
+              className={`snap-center flex-none w-48 sm:w-64 md:w-80 h-64 sm:h-80 md:h-96 transition-all duration-1000 ease-out transform ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"

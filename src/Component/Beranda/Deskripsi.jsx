@@ -51,7 +51,7 @@ const Deskripsi = () => {
             <p className="font-sans text-lg lg:text-xl mb-5 lg:mb-8 text-justify">
               Jasa Desain Grafis berpengalaman yang menangani klien dari berbagai daerah. Kami melayani secara online dan tatap muka langsung.
             </p>
-            <a href="/portofolio" className="font-sans bg-[#151F38] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 hover:bg-[#18334F] hover:text-[#0089C4] transition">
+            <a href="/portofolio" className="font-sans bg-[#14203D] text-[#CCDBFF] px-6 py-3 font-bold rounded-lg hover:text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#132859] to-[#193678] shadow-lg hover:scale-110 hover:text-black transition transform">
               Selengkapnya
             </a>
           </div>
@@ -112,68 +112,65 @@ const Deskripsi = () => {
         </p>
       </div>
 
-      {/* Horizontal scrollable testimonial container */}
       <div
         ref={testimonialRef}
         className="scroll-pl-6 mt-10 flex space-x-6 overflow-x-auto pb-8 scrollbar-hide"
         style={{ whiteSpace: "nowrap" }}
       >
         {[
-          { 
-            name: "Gumi", 
-            company: "Universitas Negeri Surabaya", 
-            role: "Mahasiswa", 
+          {
+            name: "Gumi",
+            company: "Universitas Negeri Surabaya",
+            role: "Mahasiswa",
             feedback: "Layanan desain grafis berkualitas.",
             image: klien6 // Add John's profile image
           },
-          { 
-            name: "Itis", 
-            company: "Universitas Negeri Surabaya", 
-            role: "Mahasiswa", 
+          {
+            name: "Itis",
+            company: "Universitas Negeri Surabaya",
+            role: "Mahasiswa",
             feedback: "Pelayanan ramah, responsif, revisi cepat.",
             image: klien2 // Add Jane's profile image
           },
-          { 
-            name: "Plufy", 
-            company: "Universitas Negeri Surabaya", 
-            role: "Mahasiswa", 
+          {
+            name: "Plufy",
+            company: "Universitas Negeri Surabaya",
+            role: "Mahasiswa",
             feedback: "Portofolio mengesankan, keahlian beragam proyek.",
             image: klien3 // Add Emily's profile image
           },
-          { 
-            name: "Qyuu", 
-            company: "Universitas Negeri Surabaya", 
-            role: "Mahasiswa", 
+          {
+            name: "Qyuu",
+            company: "Universitas Negeri Surabaya",
+            role: "Mahasiswa",
             feedback: "Kualitas visual unggul, bisnis menonjol.",
             image: klien4 // Add Michael's profile image
           },
-          { 
-            name: "Alex", 
-            company: "Universitas Negeri Surabaya", 
-            role: "Mahasiswa", 
+          {
+            name: "Alex",
+            company: "Universitas Negeri Surabaya",
+            role: "Mahasiswa",
             feedback: "Efisien, tepat waktu, sesuai brief.",
             image: klien5 // Add Sara's profile image
           }
         ].map((client, index) => (
-          <div key={index} className="min-w-[280px] sm:min-w-[320px] md:min-w-[380px] lg:min-w-[400px] flex-shrink-0 inline-block">
-            <div className="mx-auto max-w-sm flex flex-col items-center justify-between border rounded-lg p-8 shadow-lg space-y-6">
+          <div key={index} className="min-w-[200px] sm:min-w-[240px] md:min-w-[260px] lg:min-w-[280px] flex-shrink-0 inline-block">
+            <div className="mx-auto max-w-xs flex flex-col items-center justify-between border rounded-lg p-4 shadow-md space-y-4">
               <img 
-                src={client.image} // Use the imported image for the client
+                src={client.image} 
                 alt={client.name} 
-                className="w-24 h-24 object-cover rounded-full mb-3" 
+                className="w-16 h-16 object-cover rounded-full mb-2" 
               />
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-gray-900">{client.name}</h3>
+                <h3 className="text-sm font-semibold text-gray-900">{client.name}</h3>
                 <p className="text-xs text-gray-500">{client.role} {client.company}</p>
-                <p className="mt-2 text-sm text-gray-600 leading-6">{client.feedback}</p>
+                <p className="mt-1 text-xs text-gray-600 leading-5">{client.feedback}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
-    </div>
-
-
+      </div>
       {/* Poster Section */}
       <div className="mt-12 md:mt-13 text-center">
         <img className="w-[110%] md:w-[130%] lg:w-[115%] mx-auto rounded-lg shadow-lg hover:scale-105 transition-transform" src={poster} alt="Refa Setyagama Abdillah" />
@@ -199,10 +196,23 @@ const Deskripsi = () => {
           }
         }
 
-        .scrollbar-hide {
-          -ms-overflow-style: none; /* IE and Edge */
-          scrollbar-width: none; /* Firefox */
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
+
+        .logo-appear-0 { animation-delay: 0.2s; }
+        .logo-appear-1 { animation-delay: 0.4s; }
+        .logo-appear-2 { animation-delay: 0.6s; }
+        .logo-appear-3 { animation-delay: 0.8s; }
+        .logo-appear-4 { animation-delay: 1s; }
+        .logo-appear-5 { animation-delay: 1.2s; }
 
         .scrollbar-hide::-webkit-scrollbar {
           display: none; /* Chrome, Safari, and Opera */

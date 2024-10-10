@@ -7,9 +7,6 @@ import imerch5 from "../../assets/imerch/imerch5.png";
 import imerch6 from "../../assets/imerch/imerch6.png";
 import imerch7 from "../../assets/imerch/imerch7.png";
 
-
-
-
 const Merch = () => {
   const portfolioItems = [
     { id: 1, image: imerch1 },
@@ -19,9 +16,6 @@ const Merch = () => {
     { id: 5, image: imerch5 },
     { id: 6, image: imerch6 },
     { id: 7, image: imerch7 },
-    
-
-    
   ];
 
   const scrollRef = useRef(null);
@@ -72,7 +66,7 @@ const Merch = () => {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className={`snap-center flex-none w-64 md:w-80 h-96 transition-transform duration-300 transform 
+              className={`snap-center flex-none w-40 h-60 sm:w-48 sm:h-72 md:w-64 md:h-80 lg:w-80 lg:h-96 transition-transform duration-300 transform 
               ${hoveredId === item.id ? "scale-125 z-10" : "scale-95"} overflow-hidden relative`}
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}

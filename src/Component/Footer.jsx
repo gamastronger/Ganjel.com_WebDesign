@@ -2,12 +2,16 @@ import { Link } from "react-router-dom";
 import ig from "../assets/instagram.png";
 import fb from "../assets/facebook.png";
 import linked from "../assets/linked.png";
-
-
+import footerBg from "../assets/bgfooter2.png";
 
 const Footer = () => {
   return (
-    <footer className="text-justify bg-gradient-to-r from-[#021526] via-[#03346e] to-[#021526] text-white py-10 px-8 lg:px-16">
+    <footer
+      className="text-justify bg-cover bg-center text-white py-10 px-8 lg:px-16"
+      style={{
+        backgroundImage: `url(${footerBg})`, // Menggunakan gambar sebagai background
+      }}
+    >
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -35,7 +39,7 @@ const Footer = () => {
                 <li key={index} className="flex items-center">
                   <span className="text-lg">{service.icon}</span>
                   <a
-                    href="#"
+                    href="/layanan"
                     className="ml-3 hover:text-[#6eacda] transition duration-300"
                   >
                     {service.name}
@@ -55,7 +59,7 @@ const Footer = () => {
                   href="mailto:info@grafistix.com"
                   className="ml-3 hover:text-[#6eacda] transition duration-300"
                 >
-                 refanjie02@gmail.com
+                  refanjie02@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -81,12 +85,13 @@ const Footer = () => {
               Dapatkan tips desain, penawaran, dan update terbaru langsung ke
               inbox Anda.
             </p>
-            <div className="flex space-x-2">
-              <Link to="/Pemesanan">
-                <button className="bg-[#6eacda] hover:bg-[#e2e2b6] text-black font-bold py-2 px-10 rounded-full transition duration-300">
-                  Mulai
-                </button>
-              </Link>
+            <div className="group mt-4">
+              <a
+                href="/pemesanan"
+                className="inline-flex items-center justify-center px-10 py-2 bg-[#6eacda] text-black font-bold border border-gray-700 hover:bg-blue-700 rounded-full transition-all duration-500 ease-in-out hover:text-white hover:scale-110 hover:bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg"
+              >
+                Mulai
+              </a>
             </div>
           </div>
         </div>
@@ -110,7 +115,7 @@ const Footer = () => {
               {
                 name: "Instagram",
                 icon: ig,
-                url: "https://instagram.com",
+                url: "https://www.instagram.com/mutiangell_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
               },
               {
                 name: "LinkedIn",
@@ -134,16 +139,15 @@ const Footer = () => {
               </li>
             ))}
           </ul>
-
-          <a 
-            href="https://wa.me/6283112080715"
-            className="bg-[#6eacda] hover:bg-[#e2e2b6] text-black font-bold py-2 px-6 rounded-full transition duration-300"
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            Konsultasi Gratis
-          </a>
-
+          
+          <div className="group mt-4">
+              <a
+                href="https://wa.me/6283112080715"
+                className="inline-flex items-center justify-center px-6 py-2 bg-[#6eacda] text-black font-bold border border-gray-700 rounded-full transition-all duration-500 ease-in-out hover:text-white hover:scale-110 hover:bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg"
+              >
+                Konsultasi Gratis
+              </a>
+            </div>
         </div>
       </div>
     </footer>

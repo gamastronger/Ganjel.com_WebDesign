@@ -1,4 +1,4 @@
-import  { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import iig1 from "../../assets/imgig/iig1.png";
 import iig2 from "../../assets/imgig/iig2.png";
 import iig3 from "../../assets/imgig/iig3.png";
@@ -15,8 +15,7 @@ const Instagram = () => {
     { id: 4, image: iig4 },
     { id: 5, image: iig5 },
     { id: 6, image: iig6 },
-    { id: 6, image: iig7 },
-    
+    { id: 7, image: iig7 },
   ];
 
   const scrollRef = useRef(null);
@@ -67,7 +66,7 @@ const Instagram = () => {
           {portfolioItems.map((item) => (
             <div
               key={item.id}
-              className={`snap-center flex-none w-64 md:w-80 h-96 transition-transform duration-300 transform 
+              className={`snap-center flex-none w-40 h-60 sm:w-48 sm:h-72 md:w-64 md:h-80 lg:w-80 lg:h-96 transition-transform duration-300 transform 
               ${hoveredId === item.id ? "scale-125 z-10" : "scale-95"} overflow-hidden relative`}
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}

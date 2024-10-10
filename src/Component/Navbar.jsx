@@ -5,6 +5,7 @@ const Navbar = () => {
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
+
   const handleSidebar = () => {
     setSidebarVisible(!sidebarVisible);
   };
@@ -93,17 +94,17 @@ const Navbar = () => {
             onClick={handleSidebar}
           >
             <div
-              className="absolute top-0 right-0 w-64 h-full bg-[#03346e] shadow-lg p-6 rounded-l-lg transform transition-transform duration-300 ease-in-out"
+              className="absolute top-0 right-0 w-54 h-auto bg-[#14203D] shadow-lg p-6 rounded-l-xl transform transition-transform duration-300 ease-in-out"
               style={{
                 transform: sidebarVisible
-                  ? "translateX(0)"
+                  ? "translateX(1%)"
                   : "translateX(100%)",
               }}
             >
               {/* Close Button */}
               <button className="flex justify-end mb-4" onClick={handleSidebar}>
                 <svg
-                  className="w-8 h-8 text-black"
+                  className="w-8 h-8 text-[#D9F0FF]"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -119,7 +120,7 @@ const Navbar = () => {
               </button>
 
               {/* Mobile Links */}
-              <ul className="flex flex-col text-[#e2e2b6] gap-6">
+              <ul className="flex flex-col text-[#FFFFFF] gap-6">  
                 <li>
                   <a
                     href="/"
