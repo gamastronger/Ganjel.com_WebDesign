@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.animated-email {
+  color: #4f46e5; /* Warna ungu */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.animated-email:hover {
+  transform: scale(1.1);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
