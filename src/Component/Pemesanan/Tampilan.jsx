@@ -85,23 +85,24 @@ const Tampilan = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="mx-auto px-6 lg:px-8 md:-mt-12 lg:-mt-10">
-        <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+      {/* Pilihan Paket */}
+      <div className="mx-auto px-5 md:px-10 xl:px-8 md:-mt-12 xl:-mt-10">
+        <div className="mx-auto sm:text-center">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-white text-4xl xl:text-5xl">
             Harga Spesial
           </h2>
-          <p className="text-center mt-6 text-lg leading-8 text-gray-400">
+          <p className="text-center mt-6 text-lg text-gray-400 text-sm md:px-20">
             Dapatkan desain grafis profesional dengan harga terjangkau, revisi
             sepuasnya, dan hasil cepat untuk meningkatkan citra bisnis Anda!
           </p>
         </div>
 
         {/* Tiga Paket */}
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 mx-2 xl:mx-8">
           {packages.map((pkg) => (
             <div
               key={pkg.title}
-              className="rounded-3xl bg-gradient-to-tr from-[#FFFFFF] from-60% via-[#BDE2FF] via-80% to-[#FFFFFF] to-90% text-gray-900 p-8 ring-1 ring-gray-200 lg:flex lg:flex-col lg:justify-between"
+              className="rounded-3xl bg-gradient-to-tr from-[#FFFFFF] from-60% via-[#BDE2FF] via-80% to-[#FFFFFF] to-90% text-gray-900 p-8 ring-1 ring-gray-200 xl:flex xl:flex-col xl:justify-between"
             >
               <div>
                 <h3 className="text-2xl font-bold tracking-tight">{pkg.title}</h3>
@@ -137,14 +138,15 @@ const Tampilan = () => {
           ))}
         </div>
       </div>
-      <div className="">
-        <div className="bg-indigo-950 rounded-xl text-white mt-16 mx-5 mb-4 md:mx-20 md:-mb-8 md:mt-24 py-10 px-4 md:px-8 lg:px-20">
-          <h2 className="text-center text-3xl font-bold mb-8">
+
+      {/* FAQ */}
+      <div className="bg-indigo-950 rounded-xl text-white mt-16 mx-6 mb-4 md:mx-10 md:-mb-8 md:mt-24 py-10 px-4 md:px-8 xl:mx-14 xl:px-12">
+        <h2 className="text-center text-3xl font-bold mb-8">
             Jawaban dari semua pertanyaan
-          </h2>
-          <div className="mx-auto px-4">
-            {/* FAQ 1 */}
-            <div className="border-b border-gray-700">
+        </h2>
+        <div className="mx-auto px-4">
+          {/* FAQ 1 */}
+          <div className="border-b border-gray-700">
               <button
                 className="flex justify-between w-full py-4 text-left focus:outline-none"
                 onClick={() => toggle(1)}
@@ -242,7 +244,6 @@ const Tampilan = () => {
                 </div>
               )}
             </div>
-          </div>
         </div>
       </div>
     </div>

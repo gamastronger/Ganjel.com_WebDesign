@@ -56,7 +56,7 @@ const Deskripsi = () => {
             <p className="font-sans text-lg lg:text-xl mb-5 lg:mb-8 text-justify">
               Jasa Desain Grafis berpengalaman yang menangani klien dari berbagai daerah. Kami melayani secara online dan tatap muka langsung.
             </p>
-            <a href="/portofolio" className="font-sans bg-[#14203D] text-[#CCDBFF] px-6 py-3 font-bold rounded-lg hover:text-white transition-all duration-500 ease-in-out hover:bg-gradient-to-r from-[#132859] to-[#193678] shadow-lg hover:scale-110 hover:text-black transition transform">
+            <a href="/portofolio" className="font-sans bg-[#14203D] text-[#CCDBFF] px-6 py-3 font-bold rounded-lg hover:text-white hover:bg-gradient-to-r from-[#132859] to-[#193678] shadow-lg">
               Selengkapnya
             </a>
           </div>
