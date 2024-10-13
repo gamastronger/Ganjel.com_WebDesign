@@ -1,4 +1,4 @@
-import bg from "../../assets/bglayanan.png";
+import bg from "../../assets/bglayanan-.png";
 import pict from "../../assets/Layanan.png";
 
 const Judul = () => {

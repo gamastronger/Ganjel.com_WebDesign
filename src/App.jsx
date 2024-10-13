@@ -3,6 +3,7 @@ import Beranda from "./Views/Beranda";
 import Portofolio from "./Views/Portofolio";
 import Layanan from "./Views/Layanan";
 import Pemesanan from "./Views/Pemesanan"
+import { Contact } from "./Component/Form/Contact"
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/layanan" element={<Layanan />} />
         <Route path="/pemesanan" element={<Pemesanan />} />
       </Routes>
+
+     
     </BrowserRouter>
   );
 }

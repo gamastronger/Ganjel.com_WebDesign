@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ig from "../assets/instagram.png";
-import fb from "../assets/facebook.png";
+import yt from "../assets/youtube.png";
 import linked from "../assets/linked.png";
 import footerBg from "../assets/bgfooter2.png";
 
@@ -53,27 +53,31 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Kontak</h3>
             <ul className="space-y-1">
-              <li className="flex items-center">
-                <span className="text-lg">✉</span>
-                <a
-                  href="mailto:info@grafistix.com"
-                  className="ml-3 hover:text-[#6eacda] transition duration-300"
-                >
-                  refanjie02@gmail.com
-                </a>
-              </li>
-              <li className="flex items-center">
-                <span className="text-lg">📞</span>
-                <a
-                  href="tel:+6283112080715"
-                  className="ml-3 hover:text-[#6eacda] transition duration-300"
-                >
-                  +62 831-1208-0715
-                </a>
-              </li>
+            <li className="flex items-center">
+            <span className="text-lg">✉</span>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com"
+              className="ml-5 hover:text-[#6eacda] transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              refanjie02@gmail.com
+            </a>
+          </li>
+          <li className="flex items-center">
+            <span className="text-lg">📞</span>
+            <a
+              href="https://wa.me/6283112080715"
+              className="ml-3 hover:text-[#6eacda] transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              +62 831-1208-0715
+            </a>
+          </li>
               <li className="flex items-center">
                 <span className="text-lg">📍</span>
-                <p className="ml-3">Jl. Ketintang, Ketintang, Kec. Gayungan, Surabaya</p>
+                <a href="https://maps.app.goo.gl/LnkHQ35PHxKsr5Kz8" className="hover:text-[#6eacda] transition duration-300 ml-3">Jl. Ketintang, Ketintang, Kec. Gayungan, Surabaya</a>
               </li>
             </ul>
           </div>
@@ -108,9 +112,9 @@ const Footer = () => {
           <ul className="flex space-x-6">
             {[
               {
-                name: "Facebook",
-                icon: fb,
-                url: "https://facebook.com",
+                name: "Youtube",
+                icon: yt,
+                url: "https://www.youtube.com/@ganjel-02",
               },
               {
                 name: "Instagram",

@@ -1,5 +1,6 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 import backgroundImage from '../../assets/bgpemesanan.png'; 
+import icon from '../../assets/icon.png'; // Import your custom icon
 import { useState } from "react";
 
 const packages = [
@@ -10,17 +11,19 @@ const packages = [
     description: (
       <span>
         Solusi praktis mulai bisnis kalau budget masih tipis. Pesan melalui 
-        <span className="font-bold text-blue-500"> refanjie02@gmail.com</span>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com" className="font-bold text-blue-500" target="_blank" rel="noopener noreferrer"> refanjie02@gmail.com</a>
       </span>
     ),
     features: [
       "1 Pilihan Konsep Desain",
       "Proses Cepat 1-2 Hari",
-      "Bisa Revisi Hingga 3x",
+      "Revisi Hingga 3x",
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
+      "Revisi Hingga 5x.",
+      "2 Pilihan Konsep Desain." // Add the new feature
     ],
-    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com",
   },
   {
     title: "Paket CERMAT",
@@ -29,17 +32,19 @@ const packages = [
     description: (
       <span>
         Bisa punya pilihan, meski modal masih pas-pasan. Pesan melalui 
-        <span className="font-bold text-blue-500"> refanjie02@gmail.com</span>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com" className="font-bold text-blue-500" target="_blank" rel="noopener noreferrer"> refanjie02@gmail.com</a>
       </span>
     ),
     features: [
       "2 Pilihan Konsep Desain",
       "Proses Cepat 1-2 Hari",
-      "Bebas Revisi Sepuasnya",
+      "Revisi Hingga 5x",
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
+      "Proses Instan 1-24 Jam.",
+      "Bebas Revisi Sepuasnya.",
     ],
-    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com",
   },
   {
     title: "Paket KILAT",
@@ -48,17 +53,19 @@ const packages = [
     description: (
       <span>
         Solusi andalan, desain berkesan secara instan. Pesan melalui 
-        <span className="font-bold text-blue-500"> refanjie02@gmail.com</span>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com" className="font-bold text-blue-500" target="_blank" rel="noopener noreferrer"> refanjie02@gmail.com</a>
       </span>
     ),
     features: [
       "2 Pilihan Konsep Desain",
       "Proses Instan 1-24 Jam",
+      "Prioritas Layanan",
       "Bebas Revisi Sepuasnya",
+      "Sertifikat Kepemilikan Desain",
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
     ],
-    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com",
   },
 ];
 
@@ -101,7 +108,11 @@ const Tampilan = () => {
                 <ul className="mt-6 space-y-4">
                   {pkg.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
-                      <CheckIcon className="h-6 w-6 text-indigo-600" aria-hidden="true" />
+                      {feature === "Bebas Revisi Sepuasnya." || feature === "Revisi Hingga 5x." || feature === "2 Pilihan Konsep Desain." || feature === "Proses Instan 1-24 Jam." || feature === "3 Pilihan Konsep Desain." ? (
+                        <img src={icon} alt="Icon" className="h-6 w-6" /> // Use your custom icon for this feature
+                      ) : (
+                        <CheckIcon className="h-6 w-6 text-indigo-600" aria-hidden="true" />
+                      )}
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -205,9 +216,8 @@ const Tampilan = () => {
                   Benar! Kami
                   membuat konten Instagram yang menarik dan visual yang estetis,
                   termasuk postingan, cerita, dan highlights. Desain kami dirancang
-                  untuk meningkatkan kehadiran media sosial Anda dan menarik lebih
-                  banyak pengikut dengan tetap menjaga gaya merek yang konsisten dan
-                  kreatif.
+                  untuk membantu Anda terhubung dengan audiens dan memperkuat brand
+                  Anda di media sosial.
                 </div>
               )}
             </div>
