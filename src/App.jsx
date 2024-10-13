@@ -3,7 +3,6 @@ import Beranda from "./Views/Beranda";
 import Portofolio from "./Views/Portofolio";
 import Layanan from "./Views/Layanan";
 import Pemesanan from "./Views/Pemesanan"
-import { Contact } from "./Component/Form/Contact"
 
 function App() {
   return (

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ig from "../assets/instagram.png";
 import yt from "../assets/youtube.png";
 import linked from "../assets/linked.png";

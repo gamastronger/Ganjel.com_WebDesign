@@ -1,6 +1,6 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 import backgroundImage from '../../assets/bgpemesanan.png'; 
-import icon from '../../assets/icon.png'; // Import your custom icon
+import icon from '../../assets/icon.png';
 import { useState } from "react";
 
 const packages = [
@@ -21,7 +21,7 @@ const packages = [
       "File HD (JPG | PNG | PDF)",
       "File Master EPS (CDR/AI)",
       "Revisi Hingga 5x.",
-      "2 Pilihan Konsep Desain." // Add the new feature
+      "2 Pilihan Konsep Desain." 
     ],
     link: "https://mail.google.com/mail/?view=cm&fs=1&to=refanjie02@gmail.com",
   },
@@ -85,7 +85,7 @@ const Tampilan = () => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 md:-mt-12 lg:-mt-10">
+      <div className="mx-auto px-6 lg:px-8 md:-mt-12 lg:-mt-10">
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Harga Spesial
@@ -109,7 +109,7 @@ const Tampilan = () => {
                   {pkg.features.map((feature) => (
                     <li key={feature} className="flex gap-x-3">
                       {feature === "Bebas Revisi Sepuasnya." || feature === "Revisi Hingga 5x." || feature === "2 Pilihan Konsep Desain." || feature === "Proses Instan 1-24 Jam." || feature === "3 Pilihan Konsep Desain." ? (
-                        <img src={icon} alt="Icon" className="h-6 w-6" /> // Use your custom icon for this feature
+                        <img src={icon} alt="Icon" className="h-6 w-6" /> 
                       ) : (
                         <CheckIcon className="h-6 w-6 text-indigo-600" aria-hidden="true" />
                       )}
@@ -128,7 +128,7 @@ const Tampilan = () => {
                   href={pkg.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500"
+                  className="mt-6 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm transition-all duration-500 ease-in-out hover:scale-105 hover:bg-gradient-to-r from-blue-500 to-indigo-500 shadow-lg"
                 >
                   AMBIL PROMO
                 </a>
@@ -137,7 +137,7 @@ const Tampilan = () => {
           ))}
         </div>
       </div>
-      <div>
+      <div className="">
         <div className="bg-indigo-950 rounded-xl text-white mt-16 mx-5 mb-4 md:mx-20 md:-mb-8 md:mt-24 py-10 px-4 md:px-8 lg:px-20">
           <h2 className="text-center text-3xl font-bold mb-8">
             Jawaban dari semua pertanyaan
