@@ -162,28 +162,28 @@ const Deskripsi = () => {
             name: "Anggam",
             company: "Universitas Negeri Surabaya",
             role: "Mahasiswa",
-            feedback: "Efisien, tepat waktu, sesuai brief.",
+            feedback: "Hasil desain Grafistix sesuai visi dan sangat memuaskan!",
             image: klien6 // Add Sara's profile image
           },
           {
             name: "Muti",
             company: "Universitas Negeri Surabaya",
             role: "Mahasiswa",
-            feedback: "Efisien, tepat waktu, sesuai brief.",
+            feedback: "Desainnya luar biasa dan tepat waktu!",
             image: klien7 // Add Sara's profile image
           },
           {
             name: "Gang",
             company: "Universitas Negeri Surabaya",
             role: "Mahasiswa",
-            feedback: "Efisien, tepat waktu, sesuai brief.",
+            feedback: "Kolaborasi hebat, hasilnya mengesankan!",
             image: klien8 // Add Sara's profile image
           },
           {
             name: "Octo",
             company: "Universitas Negeri Surabaya",
             role: "Mahasiswa",
-            feedback: "Efisien, tepat waktu, sesuai brief.",
+            feedback: "Solusi desain kreatif dan profesional, saya puas!",
             image: klien9 // Add Sara's profile image
           },
           
