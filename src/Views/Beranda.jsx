@@ -3,7 +3,7 @@ import Welcome from "../Component/Beranda/Welcome";
 import Navbar from "../Component/Navbar";
 import Deskripsi from "../Component/Beranda/Deskripsi";
 import Footer from "../Component/Footer";
-import backsound from '../assets/backsound2.mp3'; // Import the backsound file
+import backsound from '../assets/backsound3.mp3'; // Import the backsound file
 
 
 function Beranda() {
